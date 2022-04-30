@@ -1,13 +1,15 @@
-import { StyleSheet } from 'react-native';
-import CategoryScreen from './screens/CategoryScreen';
+import { StyleSheet, StatusBar } from "react-native";
+import CategoryScreen from "./screens/CategoryScreen";
 
 export default function App() {
   return (
-    <CategoryScreen />
+    <>
+      <StatusBar style="light" />
+      <CategoryScreen />
+    </>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-  },
+  container: {},
 });

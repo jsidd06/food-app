@@ -7,7 +7,7 @@ function randomCategoryItem(itemData){
 }
 
 function CategoryScreen() {
-    return <FlatList data={CATEGORIES} keyExtractor={(item) => item.id} renderItem={randomCategoryItem}  />
+    return <FlatList data={CATEGORIES} keyExtractor={(item) => item.id} renderItem={randomCategoryItem}  numColumns={2} />
 }
 
 export default CategoryScreen
