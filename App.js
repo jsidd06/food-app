@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import CategoryScreen from "./screens/CategoryScreen";
 import { createStackNavigator } from "@react-navigation/stack";
 import "react-native-gesture-handler";
+import MealsOverviewScreen from "./screens/MealsOverviewScreen";
 
 const Stack = createStackNavigator();
 
@@ -12,7 +13,8 @@ export default function App() {
       <StatusBar style="dark" />
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="Meals Categories" component={CategoryScreen} />
+          <Stack.Screen name="MealsCategories" component={CategoryScreen} />
+          <Stack.Screen name="MealsOverview" component={MealsOverviewScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </>
