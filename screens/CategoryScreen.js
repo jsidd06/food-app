@@ -5,7 +5,9 @@ import { CATEGORIES } from "../data/dummy-data";
 function CategoryScreen({ navigation }) {
   function randomCategoryItem(itemData) {
     function pressHandler() {
-      navigation.navigate("MealsOverview");
+      navigation.navigate("MealsOverview", {
+        categoryId: itemData.item.id,
+      });
     }
 
     return (
