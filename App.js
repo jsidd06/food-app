@@ -1,4 +1,4 @@
-import { StyleSheet, StatusBar } from "react-native";
+import { StyleSheet, StatusBar, Button } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import CategoryScreen from "./screens/CategoryScreen";
 import { createStackNavigator } from "@react-navigation/stack";
